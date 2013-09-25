@@ -4,7 +4,7 @@
 * Author:: Yuichi Takeuchi <uzuki05@takeyu-web.com>
 * Website:: http://takeyu-web.com/
 * Copyright:: Copyright 2013 Yuichi Takeuchi
-* License:: MIT License
+* License:: Public Domain (Unlicense)
 
 MovableType 6.0 のプラグインによる SiteStats 拡張のサンプルです。
 
