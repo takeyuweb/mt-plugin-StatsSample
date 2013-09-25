@@ -1,0 +1,20 @@
+name: StatsSample
+id:   StatsSample
+key:  statssample
+version: 1.0.0
+author_name: Yuichi Takeuchi
+author_link: http://takeyu-web.com/
+blog_config_template: blog_config.tmpl
+settings:
+    enable:
+        default: 0
+        scope: blog
+applications:
+    cms:
+        site_stats_lines:
+            sample:
+                hlabel:     'Errors'
+                condition:  $statssample::StatsSample::Plugin::site_stats_widget_sample_condition
+                handler:    $statssample::StatsSample::Plugin::site_stats_widget_sample_lines
+callbacks:
+    save_config_filter.statssample: $statssample::StatsSample::Plugin::_cb_save_config_filter
