@@ -57,7 +57,7 @@ sub _cb_save_config_filter {
         $new_value = $new_value->[0];
     }
     if ( $old_value != $new_value ) {
-        MT::Util::clear_site_stats_widget_cache( $blog->id, $app->user->id );
+        MT::Util::clear_site_stats_widget_cache( $blog->id );
     }
     
     1;
